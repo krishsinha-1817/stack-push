@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int stack[100];
+    int top = -1;
+    int element = 10;
+
+    
+    if (top == 99) {
+        cout << "Stack Overflow";
+    } else {
+        top++;
+        stack[top] = element;
+    }
+
+    
+    for (int i = top; i >= 0; i--) {
+        cout << stack[i] << " ";
+    }
+
+    return 0;
+}
